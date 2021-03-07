@@ -1,13 +1,6 @@
 // task 5
 
-
 bancomat = (num) => {
-    let newNum=num.toString()
-    let str=newNum.split('')
-    if (num == NaN ||str.length==4 || str.length==6) {
-        return true
-    } else {
-        return false
-    }
+    return /^(\d{4}|\d{6})$/.test(num)
 }
-console.log(bancomat(44414))
+console.log(bancomat('4441f'))
