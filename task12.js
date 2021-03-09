@@ -6,8 +6,8 @@ function arrayDiff(arr1, arr2) {
     }
     return arr1.filter(Number)
 }
-let str = [1, 2, 2, 2, 3]
+let arr = [1, 2, 2, 2, 3]
 let del = [2]
 
-console.log(arrayDiff(str, del));
+console.log(arrayDiff(arr, del));
 
