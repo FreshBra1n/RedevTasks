@@ -1,13 +1,7 @@
 function arrayDiff(arr1, arr2) {
-    for (let i = 0; i < arr1.length; i++) {
-        if (arr1[i] == arr2) {
-            delete arr1[i]
-        }
-    }
-    return arr1.filter(Number)
+  return newArray=arr1.filter(function(x){return !arr2.includes(x)})
 }
 let arr = [1, 2, 2, 2, 3]
 let del = [2]
 
 console.log(arrayDiff(arr, del));
-
