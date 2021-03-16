@@ -1,7 +1,7 @@
 function stairs(n) {
     let res = [];
     for(let i = 1; i <= n; i++)
-        res.push(i);
-    return res.reverse();
+        res.unshift(i);
+    return res;
 }
 console.log(stairs(5))
