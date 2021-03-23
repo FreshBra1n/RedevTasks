@@ -1,6 +1,6 @@
 
 function dreamTeam(array){
-    return array.join(',').split('').filter(el=>el[0]>='A' && el[0]<='Z').sort((a,b)=>a-b).sort().join('')
+    return array.join(',').split('').filter(el=>el[0]>='A' && el[0]<='Z').sort().join('')
 }
 let team=['Matt', 'Ann', 'Dmitry', 'Max']
 
