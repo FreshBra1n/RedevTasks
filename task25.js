@@ -1,5 +1,10 @@
 let str = "Пример строки";
 
-capitalizeFirstLetter = str =>str[0].toLowerCase()
+const capitalizeFirstLetter = str => {
+    let newStr = str.split('')
+    let fL = newStr[0].toLowerCase()
+    newStr.splice(0, 1, fL) 
+    return newStr.join('')
+}
 
-    console.log(capitalizeFirstLetter(str)) // 
+console.log(capitalizeFirstLetter(str))
