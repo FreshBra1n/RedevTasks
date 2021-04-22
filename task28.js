@@ -1,8 +1,8 @@
 let str = "вишня, груша, слива, груша"
 
 const removeDuplicate=str=>{
-    str=str.split(',')
-    return str.filter((item,indx)=> str.indexOf(item)===indx).join(',')
+     let str1=str.split(',')
+    return str1.filter((item,indx)=> str1.indexOf(item)===indx).join(',')
 } 
 
 console.log(removeDuplicate(str))
