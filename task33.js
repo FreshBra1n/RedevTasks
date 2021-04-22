@@ -14,6 +14,6 @@
 
 // console.log(comparison('string', 'StRiNg'))
 
-const comparison=(str1, str2)=> (str1.toLowerCase()==str2.toLowerCase())?true:false
+const comparison=(str1, str2)=> (str1.toLowerCase()==str2.toLowerCase())
 
 console.log(comparison('string', 'StRiNg'))
