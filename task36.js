@@ -11,4 +11,16 @@ function colonOdd(num) {
     return newNum
 }
 
-console.log(colonOdd(55639217));
+function colonOdd1(num) {
+    return [...num.toString()].reduce((acc, cur, i, arr) => {
+        return (cur % 2) && (arr[i + 1] % 2)
+            ? acc.push(cur, ':')
+            : acc.push(cur)
+            , acc;
+    }
+        , [])
+        .join('')
+}
+
+
+console.log(colonOdd1(55639217));
