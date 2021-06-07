@@ -1,12 +1,17 @@
 const checkBreckats = str => {
     let stack = [];
+    let obj = {
+        '(': ')',
+        '{': '}',
+        '[': ']'
+    }
     for (let i = 0; i < str.length; i++) {
         const breckat = str[i]
-        if (breckat === '(') {
+        if (breckat === '(' || breckat === '{' || breckat === '[') {
             stack.push(breckat)
         } else {
             const lastEl = stack.pop();
-            if (!lastEl) {
+            if (breckat !==obj[lastEl]){
                 return false
             }
         }
@@ -16,4 +21,4 @@ const checkBreckats = str => {
 
 }
 
-console.log(checkBreckats('()()()('));
+console.log(checkBreckats('()()()'));
